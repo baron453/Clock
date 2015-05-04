@@ -7,9 +7,22 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-
+@class WorldClock;
+@class CurrentClock;
+@class TimerClock;
+@class AlarmClock;
+@class StopWatchClock;
+@class TimerObject;
+@interface AppDelegate : NSObject <NSApplicationDelegate>{
+    WorldClock *worldClock;
+    CurrentClock *currentClock;
+    TimerClock *timerClock;
+}
+@property TimerObject *time;
+@property NSTimer *aTimer;
+@property BOOL showTime;
+@property (weak) IBOutlet NSMenu *statusMenu;
+@property (strong, nonatomic) NSStatusItem *statusItem;
 
 @end
 
