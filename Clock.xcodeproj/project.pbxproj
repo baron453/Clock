@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		641F81C91AEE9500007FA4FE /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 641F81C81AEE9500007FA4FE /* CustomCell.m */; };
+		642278B61AFF83F200702E23 /* TimerClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642278B41AFF83F200702E23 /* TimerClockViewController.m */; };
+		642278B71AFF83F200702E23 /* TimerClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642278B51AFF83F200702E23 /* TimerClockViewController.xib */; };
+		642278BC1AFFABE300702E23 /* StatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642278BB1AFFABE300702E23 /* StatusBarController.m */; };
+		644D11D61AFF7EB400B61A1D /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 644D11D21AFF7EB400B61A1D /* cancel.png */; };
+		644D11D71AFF7EB400B61A1D /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 644D11D31AFF7EB400B61A1D /* pause.png */; };
+		644D11D81AFF7EB400B61A1D /* resume.png in Resources */ = {isa = PBXBuildFile; fileRef = 644D11D41AFF7EB400B61A1D /* resume.png */; };
+		644D11D91AFF7EB400B61A1D /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 644D11D51AFF7EB400B61A1D /* start.png */; };
 		649B38861AF50630005F9576 /* alarm_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 649B387E1AF50630005F9576 /* alarm_selected.png */; };
 		649B38871AF50630005F9576 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 649B387F1AF50630005F9576 /* alarm.png */; };
 		649B38881AF50630005F9576 /* stopwatch_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 649B38801AF50630005F9576 /* stopwatch_selected.png */; };
@@ -50,6 +57,15 @@
 /* Begin PBXFileReference section */
 		641F81C71AEE9500007FA4FE /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		641F81C81AEE9500007FA4FE /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		642278B31AFF83F200702E23 /* TimerClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerClockViewController.h; sourceTree = "<group>"; };
+		642278B41AFF83F200702E23 /* TimerClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerClockViewController.m; sourceTree = "<group>"; };
+		642278B51AFF83F200702E23 /* TimerClockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerClockViewController.xib; sourceTree = "<group>"; };
+		642278BA1AFFABE300702E23 /* StatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarController.h; sourceTree = "<group>"; };
+		642278BB1AFFABE300702E23 /* StatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarController.m; sourceTree = "<group>"; };
+		644D11D21AFF7EB400B61A1D /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		644D11D31AFF7EB400B61A1D /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		644D11D41AFF7EB400B61A1D /* resume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resume.png; sourceTree = "<group>"; };
+		644D11D51AFF7EB400B61A1D /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		649B387E1AF50630005F9576 /* alarm_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm_selected.png; sourceTree = "<group>"; };
 		649B387F1AF50630005F9576 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
 		649B38801AF50630005F9576 /* stopwatch_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopwatch_selected.png; sourceTree = "<group>"; };
@@ -110,6 +126,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		642278B81AFFAB3300702E23 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				644D11D21AFF7EB400B61A1D /* cancel.png */,
+				644D11D31AFF7EB400B61A1D /* pause.png */,
+				644D11D41AFF7EB400B61A1D /* resume.png */,
+				644D11D51AFF7EB400B61A1D /* start.png */,
+				649B387E1AF50630005F9576 /* alarm_selected.png */,
+				649B387F1AF50630005F9576 /* alarm.png */,
+				649B38801AF50630005F9576 /* stopwatch_selected.png */,
+				649B38811AF50630005F9576 /* stopwatch.png */,
+				649B38821AF50630005F9576 /* timer_selected.png */,
+				649B38831AF50630005F9576 /* timer.png */,
+				649B38841AF50630005F9576 /* world_selected.png */,
+				649B38851AF50630005F9576 /* world.png */,
+				64A29D2B1AF45EBE00053921 /* good_morning.aiff */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		642278B91AFFAB9200702E23 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				641F81C71AEE9500007FA4FE /* CustomCell.h */,
+				641F81C81AEE9500007FA4FE /* CustomCell.m */,
+				642278BA1AFFABE300702E23 /* StatusBarController.h */,
+				642278BB1AFFABE300702E23 /* StatusBarController.m */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
 		64B204C71AEB45CB002401FD /* curentClock */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				64CFA5F71AE89B5500CCA0A6 /* Clock */,
+				64CFA5F81AE89B5500CCA0A6 /* Supporting Files */,
 				64CFA60B1AE89B5600CCA0A6 /* ClockTests */,
 				64CFA5F61AE89B5500CCA0A6 /* Products */,
 			);
@@ -164,26 +212,16 @@
 		64CFA5F71AE89B5500CCA0A6 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
-				649B387E1AF50630005F9576 /* alarm_selected.png */,
-				649B387F1AF50630005F9576 /* alarm.png */,
-				649B38801AF50630005F9576 /* stopwatch_selected.png */,
-				649B38811AF50630005F9576 /* stopwatch.png */,
-				649B38821AF50630005F9576 /* timer_selected.png */,
-				649B38831AF50630005F9576 /* timer.png */,
-				649B38841AF50630005F9576 /* world_selected.png */,
-				649B38851AF50630005F9576 /* world.png */,
-				64A29D2B1AF45EBE00053921 /* good_morning.aiff */,
-				641F81C71AEE9500007FA4FE /* CustomCell.h */,
-				641F81C81AEE9500007FA4FE /* CustomCell.m */,
+				642278B91AFFAB9200702E23 /* CustomView */,
+				642278B81AFFAB3300702E23 /* resource */,
 				64CFA5FA1AE89B5500CCA0A6 /* AppDelegate.h */,
 				64CFA5FB1AE89B5500CCA0A6 /* AppDelegate.m */,
-				64CFA5FF1AE89B5500CCA0A6 /* Images.xcassets */,
 				64CFA6011AE89B5500CCA0A6 /* MainMenu.xib */,
-				64CFA5F81AE89B5500CCA0A6 /* Supporting Files */,
+				64CFA5FF1AE89B5500CCA0A6 /* Images.xcassets */,
+				64F4A88A1AEF1C0A0077A7FC /* TimerClock */,
 				64CBBDA31AEA3C0900EC7896 /* worldclock */,
 				64CBBDA71AEA44B700EC7896 /* model */,
 				64B204C71AEB45CB002401FD /* curentClock */,
-				64F4A88A1AEF1C0A0077A7FC /* TimerClock */,
 				64DEC9C11AF2205300A579CD /* AlarmClock */,
 				64DEC9C71AF2209000A579CD /* StopWatchClock */,
 			);
@@ -197,6 +235,7 @@
 				64CFA5FD1AE89B5500CCA0A6 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = Clock;
 			sourceTree = "<group>";
 		};
 		64CFA60B1AE89B5600CCA0A6 /* ClockTests */ = {
@@ -242,6 +281,9 @@
 				64F4A8851AEF1C030077A7FC /* TimerClock.h */,
 				64F4A8861AEF1C030077A7FC /* TimerClock.m */,
 				64F4A8871AEF1C030077A7FC /* TimerClock.xib */,
+				642278B31AFF83F200702E23 /* TimerClockViewController.h */,
+				642278B41AFF83F200702E23 /* TimerClockViewController.m */,
+				642278B51AFF83F200702E23 /* TimerClockViewController.xib */,
 			);
 			name = TimerClock;
 			sourceTree = "<group>";
@@ -328,17 +370,22 @@
 			files = (
 				649B388C1AF50630005F9576 /* world_selected.png in Resources */,
 				64DEC9C01AF2204F00A579CD /* AlarmClock.xib in Resources */,
+				644D11D91AFF7EB400B61A1D /* start.png in Resources */,
 				649B38861AF50630005F9576 /* alarm_selected.png in Resources */,
 				64B204C61AEB45C3002401FD /* CurrentClock.xib in Resources */,
+				644D11D81AFF7EB400B61A1D /* resume.png in Resources */,
 				649B388D1AF50630005F9576 /* world.png in Resources */,
 				649B388A1AF50630005F9576 /* timer_selected.png in Resources */,
+				642278B71AFF83F200702E23 /* TimerClockViewController.xib in Resources */,
 				64A29D2C1AF45EBE00053921 /* good_morning.aiff in Resources */,
+				644D11D61AFF7EB400B61A1D /* cancel.png in Resources */,
 				649B388B1AF50630005F9576 /* timer.png in Resources */,
 				649B38881AF50630005F9576 /* stopwatch_selected.png in Resources */,
 				649B38891AF50630005F9576 /* stopwatch.png in Resources */,
 				64CFA6001AE89B5500CCA0A6 /* Images.xcassets in Resources */,
 				64CBBDA21AEA3BFC00EC7896 /* WorldClock.xib in Resources */,
 				64F4A8891AEF1C030077A7FC /* TimerClock.xib in Resources */,
+				644D11D71AFF7EB400B61A1D /* pause.png in Resources */,
 				64DEC9C61AF2208D00A579CD /* StopWatchClock.xib in Resources */,
 				64CFA6031AE89B5500CCA0A6 /* MainMenu.xib in Resources */,
 				649B38871AF50630005F9576 /* alarm.png in Resources */,
@@ -360,6 +407,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64C273EB1AF093C3004BE1D2 /* TimerObject.m in Sources */,
+				642278B61AFF83F200702E23 /* TimerClockViewController.m in Sources */,
+				642278BC1AFFABE300702E23 /* StatusBarController.m in Sources */,
 				64CFA5FE1AE89B5500CCA0A6 /* main.m in Sources */,
 				64CBBDA61AEA44B200EC7896 /* worldClockData.m in Sources */,
 				64F4A8881AEF1C030077A7FC /* TimerClock.m in Sources */,

@@ -23,6 +23,8 @@
 @property BOOL showTime;
 @property (weak) IBOutlet NSMenu *statusMenu;
 @property (strong, nonatomic) NSStatusItem *statusItem;
+@property (weak) IBOutlet NSView *view;
+@property (weak) IBOutlet NSTextField *statusTitle;
 
 @end
 

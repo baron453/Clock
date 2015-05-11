@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -15,6 +15,8 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="statusMenu" destination="Yjm-YU-5hM" id="gXE-wY-SAB"/>
+                <outlet property="statusTitle" destination="wuS-JZ-76Z" id="lAc-59-hvK"/>
+                <outlet property="view" destination="qqz-vf-dbL" id="nFK-DH-Nt8"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -38,5 +40,27 @@
             </items>
             <point key="canvasLocation" x="647.5" y="99.5"/>
         </menu>
+        <viewController id="6G7-b8-bz5" userLabel="Popover View Controller"/>
+        <popover id="6vM-eI-uIG">
+            <connections>
+                <outlet property="contentViewController" destination="6G7-b8-bz5" id="Ohw-mU-PMF"/>
+            </connections>
+        </popover>
+        <customView id="qqz-vf-dbL" customClass="StatusBarController">
+            <rect key="frame" x="0.0" y="0.0" width="65" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="wuS-JZ-76Z">
+                    <rect key="frame" x="-2" y="0.0" width="69" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="00:00:00" id="v6A-bz-yd9">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="620.5" y="272"/>
+        </customView>
     </objects>
 </document>
